@@ -18,7 +18,7 @@ define('SITEDESC', 'Desenvolvimento Web em alagoas, trabalhamos com criação de
 
 
 // DEFINE A BASA DO SITE ####################
-define('HOME', 'http://localhost/require.V2');
+define('HOME', 'http://localhost/projetos-git/require.V2');
 define('THEME', 'require');
 
 define('INCLUDE_PATH',  HOME . DIRECTORY_SEPARATOR . 'themes' . DIRECTORY_SEPARATOR . THEME);

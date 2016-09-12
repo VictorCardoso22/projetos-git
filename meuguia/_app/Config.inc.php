@@ -17,7 +17,7 @@ define('SITENAME', 'Meu Guia - ');
 define('SITEDESC', '');
 
 // DEFINE A BASE DO SITE ####################
-define('HOME', 'http://localhost/meuguia');
+define('HOME', 'http://localhost/projetos-git/meuguia');
 define('THEME', 'meuguia');
 
 define('INCLUDE_PATH', HOME . DIRECTORY_SEPARATOR . 'themes' . DIRECTORY_SEPARATOR . THEME);

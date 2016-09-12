@@ -17,7 +17,7 @@ define('SITENAME', 'Buscatudo Serviços');
 define('SITEDESC', 'O Buscatudo Serviços é um guia online, onde você encontra tudo o que procura em serviços e produtos na cidade de coruripe-AL, faça uma pesquisa rápida e encontre exatamente o que procura.');
 
 // DEFINE A BASE DO SITE ####################
-define('HOME', 'http://localhost/buscatudo');
+define('HOME', 'http://localhost/projetos-git/buscatudo');
 define('THEME', 'buscatudo');
 
 define('INCLUDE_PATH', HOME . DIRECTORY_SEPARATOR . 'themes' . DIRECTORY_SEPARATOR . THEME);
