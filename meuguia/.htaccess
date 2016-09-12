@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1
+
+# Habilitar o PHP 5.5
+AddHandler application/x-httpd-php55 .php - See more at: http://faq.hostgator.com.br/content/54/389/pt-br/habilitando-o-php-55-em-seu-site.html#sthash.nxdQXn3I.dpuf
