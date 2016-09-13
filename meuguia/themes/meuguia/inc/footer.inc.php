@@ -5,39 +5,55 @@
       <div class="container">
         <div class="mu-footer-top-area">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
                 <h4>Mapa do site</h4>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="">Onde comer</a></li>
-                  <li><a href="">Onde ficar</a></li>
-                  <li><a href="">Onde comprar</a></li>
-                  <li><a href="">onde se divertir</a></li>
-                  <li><a href="">onde se embelezar</a></li>
-                  <li><a href="">Noticias</a></li>
+                <li class="active"><a href="<?= HOME ?>">Home</a></li>
+                <li><a href="<?= HOME ?>/empresas/onde-comer">Onde Comer</a></li>                
+                <li><a href="<?= HOME ?>/empresas/onde-ficar">Onde Ficar</a></li>  
+                <li><a href="<?= HOME ?>/empresas/onde-comprar">Onde Comprar</a></li>                
+                <li><a href="<?= HOME ?>/empresas/onde-se-divertir">Onde Se Divertir</a></li>  
+               
+           
+                </ul>
+              </div>
+            </div>
+              <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                
+                <ul>
+                
+                <li><a href="<?= HOME ?>/empresas/onde-se-embelezar">Onde Se Embelezar</a></li>                
+                <li><a href="<?= HOME ?>/empresas/outros">Outros</a></li>     
+                <li><a href="<?= HOME ?>/categoria/noticias" title="Noticias">Noticias</a></li>            
+                <li><a href="<?= HOME ?>/como-chegar">Como Chegar</a></li>                
+                <li><a href="<?= HOME ?>/informacoes-uteis">Informações Úteis</a></li>  
+                <li><a href="<?= HOME ?>/contato">Contato</a></li>
+                          
+           
                 </ul>
               </div>
             </div>
          
-            <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>News letter</h4>
+                <h4>Assine nosso Blog</h4>
                 <p>Get latest update, news & academic offers</p>
                 <form class="mu-subscribe-form">
                   <input type="email" placeholder="Type your Email">
-                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
+                  <button class="mu-subscribe-btn" type="submit">Assine!</button>
                 </form>               
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>Contato</h4>
+                <h4>Contatos</h4>
                 <address>
-                  <p>P.O. Box 320, Ross, California 9495, USA</p>
-                  <p>Phone: (415) 453-1568 </p>
-                  <p>Website: www.markups.io</p>
-                  <p>Email: info@markups.io</p>
+                  
+                  <p>Phone: (00) 00000-00000 </p>
+                  <p>Website:</p>
+                  <p>Email: </p>
                 </address>
               </div>
             </div>

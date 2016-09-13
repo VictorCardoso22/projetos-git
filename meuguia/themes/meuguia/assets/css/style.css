@@ -82,6 +82,15 @@ img {
   border: none;
 }
 
+.mu-read-more{
+   border: 1px solid #fff;
+  color: #fff;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
 .mu-read-more-btn {
   border: 1px solid #fff;
   color: #fff;
@@ -1955,7 +1964,7 @@ img {
   width: 100%;
 }
 #mu-footer .mu-footer-top {
-  background-color: #333;
+  background-color: #f1f1f1;
   display: inline;
   float: left;
   padding: 50px 0;
@@ -1972,12 +1981,12 @@ img {
   width: 100%;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget h4 {
-  color: #fff;
+  color: #222;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget ul li a {
-  color: #f9f9f9;
+  color: #222;
   display: inline-block;
   font-size: 14px;
   font-weight: normal;
@@ -2001,7 +2010,7 @@ img {
   margin-left: 5px;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget p {
-  color: #f9f9f9;
+  color: #222;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget .mu-subscribe-form {
   display: inline;
@@ -2037,7 +2046,7 @@ img {
   letter-spacing: 0.5px;
 }
 #mu-footer .mu-footer-bottom {
-  background-color: #222;
+  background-color: #999;
   display: inline;
   float: left;
   padding: 25px 0;

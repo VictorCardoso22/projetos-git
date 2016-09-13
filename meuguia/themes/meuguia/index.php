@@ -11,7 +11,7 @@ $tpl_empresa = $View->Load('empresa_p');
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/slider/1.jpg" alt="img">
+          <img src="<?= INCLUDE_PATH; ?>/imagens/banner-997373.jpg" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
@@ -20,8 +20,20 @@ $tpl_empresa = $View->Load('empresa_p');
         <h2>Procure o que você precisa</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
           <div class="mu-search-form">
-            <input type="search">
-            <a href="#" class="mu-read-more-btn">Pequisar</a>
+                                <?php
+                                $search = filter_input(INPUT_POST, 's', FILTER_DEFAULT);
+                                if (!empty($search)):
+                                    $search = strip_tags(trim(urlencode($search)));
+                                    header('Location: ' . HOME . '/pesquisa/' . $search);
+                                endif;
+                                ?>
+                                <form name="search" value="search"  action="" method="post">
+                  
+           
+            <input class="mu-read-more" type="text" name="s" value="" placeholder="Olá, faça uma pesquisa rápida.">
+             
+            <input class="mu-read-more-btn" type="submit" name="sendsearch" value="Pesquisar" title="pesquisar" />
+            </form>
           </div>
       </div>
     </div>

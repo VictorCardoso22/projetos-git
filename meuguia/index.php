@@ -23,7 +23,7 @@ $sessao = new Session;
     <!-- Fancybox slider -->
     <link rel="stylesheet" href="<?= INCLUDE_PATH; ?>/assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
     <!-- Theme color -->
-    <link id="switcher" href="<?= INCLUDE_PATH; ?>/assets/css/theme-color/red-theme.css" rel="stylesheet">          
+    <link id="switcher" href="<?= INCLUDE_PATH; ?>/assets/css/theme-color/default-theme.css" rel="stylesheet">          
 
     <!-- Main style sheet -->
     <link href="<?= INCLUDE_PATH; ?>/assets/css/style.css" rel="stylesheet">    

@@ -17,11 +17,11 @@
                 <div class="mu-header-top-left">
                   <div class="mu-top-email">
                     <i class="fa fa-envelope"></i>
-                    <span>info@markups.io</span>
+                    <span>email@meugui.com</span>
                   </div>
                   <div class="mu-top-phone">
                     <i class="fa fa-phone"></i>
-                    <span>(568) 986 652</span>
+                    <span>(00) 0000-0000</span>
                   </div>
                 </div>
               </div>
@@ -61,7 +61,7 @@
           <!-- TEXT BASED LOGO -->
           <!-- <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>Varsity</span></a> -->
           <!-- IMG BASED LOGO  -->
-          <a class="navbar-brand" href="<?= HOME ?>"><img src="<?= INCLUDE_PATH; ?>/imagens/logo.png" alt="logo"></a>
+          <!-- <a class="navbar-brand" href="<?= HOME ?>"><img src="<?= INCLUDE_PATH; ?>/imagens/logo.png" alt="logo"></a> -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
@@ -107,8 +107,18 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">            
-            <form class="mu-search-form">
-              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
+
+            <?php
+                                $search = filter_input(INPUT_POST, 's', FILTER_DEFAULT);
+                                if (!empty($search)):
+                                    $search = strip_tags(trim(urlencode($search)));
+                                    header('Location: ' . HOME . '/pesquisa/' . $search);
+                                endif;
+                                ?>
+                               
+            <form name="search" value="search"  action="" method="post" class="mu-search-form">
+              <input  class="mu-read-more" type="text" name="s" value="" placeholder="escreva o que procura e aperte Enter"> 
+              <input class="mu-read-more-btn" type="submit" name="sendsearch" value="Pesquisar">             
             </form>
           </div>
         </div>
