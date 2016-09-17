@@ -84,7 +84,7 @@ img {
 
 .mu-read-more{
    border: 1px solid #fff;
-  color: #fff;
+  color: #222;
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
@@ -356,7 +356,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  height: 500px;
+  height: 700px;
 }
 #mu-slider .mu-slider-single .mu-slider-img:after {
   background-color: rgba(0, 0, 0, 0.5);
@@ -2200,8 +2200,9 @@ img {
     margin-top: 30px;
   }
 
-  #mu-search .mu-search-area .mu-search-form input[type="search"] {
+  #mu-search .mu-search-area .mu-search-form input[type="text"] {
     font-size: 30px;
+    color: #000;
   }
 
   #mu-search .mu-search-area .mu-search-close {

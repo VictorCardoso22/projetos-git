@@ -5,6 +5,7 @@ define('USER', 'root');
 define('PASS', '221493');
 define('DBSA', 'busca');
 
+
 // DEFINE SERVIDOR DE E-MAIL ################
 
 define('MAILUSER', 'suporte@buscatudoservicos.com.br');

@@ -11,14 +11,14 @@ $tpl_empresa = $View->Load('empresa_p');
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="<?= INCLUDE_PATH; ?>/imagens/banner-997373.jpg" alt="img">
+          <img src="<?= INCLUDE_PATH; ?>/imagens/cidade-pessoas.jpg" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
-        <h4>Aqui você encontra tudo</h4>
+        <h4></h4>
         <span></span>
-        <h2>Procure o que você precisa</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
+        <h2>Aqui você encontra tudo!</h2>
+        <p>Basta fazer uma pesquisa no formulario abaixo e encontrará exatamente o que procura.</p>
           <div class="mu-search-form">
                                 <?php
                                 $search = filter_input(INPUT_POST, 's', FILTER_DEFAULT);
@@ -39,20 +39,34 @@ $tpl_empresa = $View->Load('empresa_p');
     </div>
     <!-- Start single slider item -->
     <!-- Start single slider item -->
-  <!--   <div class="mu-slider-single">
+    <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/slider/2.jpg" alt="img">
+          <img src="<?= INCLUDE_PATH; ?>/imagens/mulher-pesquisando.jpg" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
-        <h4>Premiumu Quality Free Template</h4>
+        
         <span></span>
-        <h2>Best Education Template Ever</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor amet error eius reiciendis eum sint unde eveniet deserunt est debitis corporis temporibus recusandae accusamus.</p>
-        <a href="#" class="mu-read-more-btn">Read More</a>
+        <h2>Olá amigo, o que está procurando?</h2>
+        <p>Faça uma breve pesquisa eu encontre o que precisa ;).</p>
+        <div class="mu-search-form">
+                                <?php
+                                $search = filter_input(INPUT_POST, 's', FILTER_DEFAULT);
+                                if (!empty($search)):
+                                    $search = strip_tags(trim(urlencode($search)));
+                                    header('Location: ' . HOME . '/pesquisa/' . $search);
+                                endif;
+                                ?>
+                                <form name="search" value="search"  action="" method="post">
+                  
+           
+            <input class="mu-read-more" type="search" name="s" value="" placeholder="Olá, faça uma pesquisa rápida.">
+             
+            <input class="mu-read-more-btn" type="submit" name="sendsearch" value="Pesquisar" title="pesquisar" />
+            </form>
       </div>
-    </div> -->
+    </div>
     <!-- Start single slider item -->
     <!-- Start single slider item -->
   <!--   <div class="mu-slider-single">

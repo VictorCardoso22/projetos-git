@@ -12,7 +12,7 @@ $sessao = new Session;
     <title>Meu Guia| Home</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?= INCLUDE_PATH; ?>/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= INCLUDE_PATH; ?>/imagens/favicon" type="image/x-icon">
 
     <!-- Font awesome -->
     <link href="<?= INCLUDE_PATH; ?>/assets/css/font-awesome.css" rel="stylesheet">

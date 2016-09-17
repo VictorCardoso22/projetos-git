@@ -67,7 +67,7 @@ jQuery(function($){
       dots: false,
       infinite: true,
       arrows: true,
-      speed: 500,     
+      speed: 600,     
       autoplay: true,      
       cssEase: 'linear'
     });
@@ -80,7 +80,7 @@ jQuery(function($){
       dots: true,
       infinite: true,
       arrows: false,
-      speed: 500,
+      speed: 600,
       autoplay: true,          
       cssEase: 'linear'
     });
@@ -94,7 +94,7 @@ jQuery(function($){
       dots: true,
       arrows: false,
       infinite: true,
-      speed: 300,
+      speed: 600,
       slidesToShow: 3,
       slidesToScroll: 2,
       autoplay: true,
@@ -138,13 +138,13 @@ jQuery(function($){
       infinite: true,
       arrows: false,
       autoplay: true,
-      speed: 500,      
+      speed: 600,      
       cssEase: 'linear'
     });       
 
   /* ----------------------------------------------------------- */
   /*  7. COUNTER
-  /* ----------------------------------------------------------- */
+  /* ---------------------------------------------------------- */
 
     jQuery('.counter').counterUp({
         delay: 10,
@@ -160,7 +160,7 @@ jQuery(function($){
       dots: false,
       arrows: true,
       infinite: true,
-      speed: 300,
+      speed: 600,
       slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: true,
