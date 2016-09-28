@@ -4,6 +4,9 @@ $tpl_g = $View->Load('article_g');
 $tpl_m = $View->Load('article_m');
 $tpl_p = $View->Load('article_p');
 $tpl_empresa = $View->Load('empresa_p');
+
+$EmpLink = $Link->getData()['empresa_link'];
+$Cat = $Link->getData()['empresa_cat'];
 ?>
   <!-- Start Slider -->
   <section id="mu-slider">
@@ -105,51 +108,47 @@ $tpl_empresa = $View->Load('empresa_p');
             <div class="mu-features-content">
               <div class="row">
                 <div class="col-lg-4 col-md-4  col-sm-6">
-                  <div class="mu-single-feature">
-                    <span class="fa fa-cutlery"></span>
-                    <h4>Onde Comer</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                    <a href="<?= HOME ?>/empresas/onde-comer" title="Onde Comer">Veja Mais</a>
+                  <div  class="mu-single-feature">
+                  <a href="<?= HOME ?>/empresas/onde-comer" title="Onde Comer" style="border: 0; "> <span class="fa fa-cutlery"></span></a>
+                    <h4> <a href="<?= HOME ?>/empresas/onde-comer" title="Onde Comer" style="border: 0; font-size:14pt">Onde Comer</a></h4>
+                  <p>Aqui você encontra onde comer bem, encontre aqui restaurantes, churrascarias, pizzarias, self-service e muito mais...</p>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
-                    <span class="fa fa-hotel"></span>
-                    <h4>Onde Ficar</h4>
+                     <a href="<?= HOME ?>/empresas/onde-ficar" title="Onde Ficar" style="border: 0;"><span class="fa fa-hotel"></span></a>
+                    <h4> <a href="<?= HOME ?>/empresas/onde-ficar" title="Onde Ficar" style="border: 0; font-size:14pt">Onde Ficar</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                    <a href="<?= HOME ?>/empresas/onde-ficar" title="Onde Ficar">Veja Mais</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
-                    <span class="fa fa-gift"></span>
-                    <h4>Onde Comprar</h4>
+                    <a href="<?= HOME ?>/empresas/onde-comprar" title="Onde Comprar" style="border: 0;"><span class="fa fa-gift"></span></a>
+                    <h4><a href="<?= HOME ?>/empresas/onde-comprar" title="Onde Comprar" style="border: 0; font-size:14pt">Onde Comprar</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                    <a href="<?= HOME ?>/empresas/onde-comprar" title="Onde Comprar">Veja Mais</a>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
-                    <span class="fa fa-music"></span>
-                    <h4>Onde se divertir</h4>
+                   <a href="<?= HOME ?>/empresas/onde-se-divertir" title="Onde se divertir" style="border: 0; "> <span class="fa fa-music"></span></a>
+                    <h4><a href="<?= HOME ?>/empresas/onde-se-divertir" title="Onde se divertir" style="border: 0; font-size:14pt">Onde se divertir</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                    <a href="<?= HOME ?>/empresas/onde-se-divertir" title="Onde se divertir">Veja Mais</a>
+                   
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
-                    <span class="fa fa-smile-o"></span>
-                    <h4>Onde se embelezar</h4>
+                     <a href="<?= HOME ?>/empresas/onde-se-embelezar" title="Onde se embelezar" style="border: 0;"> <span class="fa fa-smile-o"></span></a>
+                    <h4>  <a href="<?= HOME ?>/empresas/onde-se-embelezar" title="Onde se embelezar" style="border: 0; font-size:14pt">Onde se embelezar</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                    <a href="<?= HOME ?>/empresas/onde-se-embelezar" title="Onde se embelezar">Veja Mais</a>
-                  </div>
+                                    </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
-                    <span class="fa fa-list"></span>
-                     <h4>Outros</h4>
+                      <a href="<?= HOME ?>/empresas/outros" title="Outros" style="border: 0;"><span class="fa fa-list"></span></a>
+                     <h4>  <a href="<?= HOME ?>/empresas/outros" title="Outros" style="border: 0; font-size:14pt">Outros</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
-                    <a href="<?= HOME ?>/empresas/outros" title="Outros">Veja Mais</a>
+                 
                   </div>
                 </div>
               </div>
@@ -172,26 +171,48 @@ $tpl_empresa = $View->Load('empresa_p');
               <h2>Mais procuradas</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, repudiandae, suscipit repellat minus molestiae ea.</p>
             </div>
+            
+
+         
             <!-- end title -->
             <!-- begain our teacher content -->
             <div class="mu-our-teacher-content">
               <div class="row">
-              <?php for($i=0; $i <= 3 ; $i++ ){ ?>
-                <div class="col-lg-3 col-md-3  col-sm-6">
-                  <div class="mu-our-teacher-single">
-                    <figure class="mu-our-teacher-img">
-                      <img src="<?= INCLUDE_PATH; ?>/assets/img/testimonial-1.png" alt="teacher img">
-                      
-                    </figure>                    
-                    <div class="mu-ourteacher-single-content">
-                      <a href=""><h4>Brian Dean</h4></a>
-                      <span>Math Teacher</span>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod pariatur recusandae odio dignissimos. Eligendi.</p>
-                    </div>
-                  </div>
-                </div>
-              <?php } ?>
+                 <?php
+                            $getPage = (!empty($Link->getLocal()[2]) ? $Link->getLocal()[2] : 1);
+                            $Pager = new Pager(HOME . '/empresas/' . $EmpLink . '/');
+                            $Pager->ExePager($getPage, 15);
 
+                            $readEmp = new Read;
+                            $readEmp->ExeRead("app_empresas", "ORDER BY empresa_views DESC LIMIT 4");
+                              
+                            if (!$readEmp->getResult()):
+                                $Pager->ReturnPage();
+                                WSErro("Desculpe, ainda não existem empresas cadastradas {$Cat}, favor volte depois!", WS_INFOR);
+                            else:
+                                $View = new View;
+                                $tpl = $View->Load('empresa_list');
+                                foreach ($readEmp->getResult() as $emp):
+
+                                    $Cidade = new Read;
+                                    $Cidade->ExeRead("app_cidades", "WHERE cidade_id = :cidadeid", "cidadeid={$emp['empresa_cidade']}");
+                                    $Cidade = $Cidade->getResult()[0]['cidade_nome'];
+
+                                    $Estado = new Read;
+                                    $Estado->ExeRead("app_estados", "WHERE estado_id = :estadoid", "estadoid={$emp['empresa_uf']}");
+                                    $Estado = $Estado->getResult()[0]['estado_uf'];
+
+                                     $emp['empresa_sobre'] = Check::Words($emp['empresa_sobre'], 14);
+                                    $emp['empresa_cidade'] = $Cidade;
+                                    $emp['empresa_uf'] = $Estado;
+
+                                    $View->Show($emp, $tpl);
+
+                                endforeach;
+                           
+                               
+                            endif;
+                            ?>
               </div>
             </div> 
             <!-- End our teacher content -->           

@@ -6,6 +6,23 @@ else:
     header('Location: ' . HOME . DIRECTORY_SEPARATOR . '404');
 endif;
 ?>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '327387867598254',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <!--HOME CONTENT-->
 <!-- End breadcrumb -->
  <section id="mu-course-content">
@@ -34,7 +51,9 @@ endif;
                     <p><?= $post_content; ?></p>
              
         </div>
+         <div class="fb-comments"  data-href="http://localhost/meuguia/empresa/<?= $post_title; ?>" data-width="100%" data-numposts="5"></div>
                         </div>
+
                       </div> 
                     </div>                                   
                   </div>
