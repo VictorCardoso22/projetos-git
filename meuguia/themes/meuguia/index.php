@@ -10,37 +10,7 @@ $Cat = $Link->getData()['empresa_cat'];
 ?>
   <!-- Start Slider -->
   <section id="mu-slider">
-    <!-- Start single slider item -->
-    <div class="mu-slider-single">
-      <div class="mu-slider-img">
-        <figure>
-          <img src="<?= INCLUDE_PATH; ?>/imagens/cidade-pessoas.jpg" alt="img">
-        </figure>
-      </div>
-      <div class="mu-slider-content">
-        <h4></h4>
-        <span></span>
-        <h2>Aqui você encontra tudo!</h2>
-        <p>Basta fazer uma pesquisa no formulario abaixo e encontrará exatamente o que procura.</p>
-          <div class="mu-search-form">
-                                <?php
-                                $search = filter_input(INPUT_POST, 's', FILTER_DEFAULT);
-                                if (!empty($search)):
-                                    $search = strip_tags(trim(urlencode($search)));
-                                    header('Location: ' . HOME . '/pesquisa/' . $search);
-                                endif;
-                                ?>
-                                <form name="search" value="search"  action="" method="post">
-                  
-           
-            <input class="mu-read-more" type="text" name="s" value="" placeholder="Olá, faça uma pesquisa rápida.">
-             
-            <input class="mu-read-more-btn" type="submit" name="sendsearch" value="Pesquisar" title="pesquisar" />
-            </form>
-          </div>
-      </div>
-    </div>
-    <!-- Start single slider item -->
+    
     <!-- Start single slider item -->
     <div class="mu-slider-single">
       <div class="mu-slider-img">
@@ -139,14 +109,14 @@ $Cat = $Link->getData()['empresa_cat'];
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
                      <a href="<?= HOME ?>/empresas/onde-se-embelezar" title="Onde se embelezar" style="border: 0;"> <span class="fa fa-smile-o"></span></a>
-                    <h4>  <a href="<?= HOME ?>/empresas/onde-se-embelezar" title="Onde se embelezar" style="border: 0; font-size:14pt">Onde se embelezar</a></h4>
+                    <h4>  <a href="<?= HOME ?>/empresas/onde-se-embelezar" title="Onde se embelezar" style="border: 0; font-size:14pt">Saúde e Beleza</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
                                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                   <div class="mu-single-feature">
-                      <a href="<?= HOME ?>/empresas/outros" title="Outros" style="border: 0;"><span class="fa fa-list"></span></a>
-                     <h4>  <a href="<?= HOME ?>/empresas/outros" title="Outros" style="border: 0; font-size:14pt">Outros</a></h4>
+                      <a href="<?= HOME ?>/empresas/outros" title="Outros" style="border: 0;"><span class="fa fa-camera"></span></a>
+                     <h4>  <a href="<?= HOME ?>/empresas/outros" title="Outros" style="border: 0; font-size:14pt">Turismo e Lazer</a></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero itaque sint labore similique maxime natus eum.</p>
                  
                   </div>
@@ -168,7 +138,7 @@ $Cat = $Link->getData()['empresa_cat'];
           <div class="mu-our-teacher-area">
             <!-- begain title -->
             <div class="mu-title">
-              <h2>Mais procuradas</h2>
+              <h2>Publicidde</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, repudiandae, suscipit repellat minus molestiae ea.</p>
             </div>
             
@@ -178,41 +148,21 @@ $Cat = $Link->getData()['empresa_cat'];
             <!-- begain our teacher content -->
             <div class="mu-our-teacher-content">
               <div class="row">
-                 <?php
-                            $getPage = (!empty($Link->getLocal()[2]) ? $Link->getLocal()[2] : 1);
-                            $Pager = new Pager(HOME . '/empresas/' . $EmpLink . '/');
-                            $Pager->ExePager($getPage, 15);
-
-                            $readEmp = new Read;
-                            $readEmp->ExeRead("app_empresas", "ORDER BY empresa_views DESC LIMIT 4");
-                              
-                            if (!$readEmp->getResult()):
-                                $Pager->ReturnPage();
-                                WSErro("Desculpe, ainda não existem empresas cadastradas {$Cat}, favor volte depois!", WS_INFOR);
-                            else:
-                                $View = new View;
-                                $tpl = $View->Load('empresa_list');
-                                foreach ($readEmp->getResult() as $emp):
-
-                                    $Cidade = new Read;
-                                    $Cidade->ExeRead("app_cidades", "WHERE cidade_id = :cidadeid", "cidadeid={$emp['empresa_cidade']}");
-                                    $Cidade = $Cidade->getResult()[0]['cidade_nome'];
-
-                                    $Estado = new Read;
-                                    $Estado->ExeRead("app_estados", "WHERE estado_id = :estadoid", "estadoid={$emp['empresa_uf']}");
-                                    $Estado = $Estado->getResult()[0]['estado_uf'];
-
-                                     $emp['empresa_sobre'] = Check::Words($emp['empresa_sobre'], 14);
-                                    $emp['empresa_cidade'] = $Cidade;
-                                    $emp['empresa_uf'] = $Estado;
-
-                                    $View->Show($emp, $tpl);
-
-                                endforeach;
-                           
-                               
-                            endif;
-                            ?>
+                  <?php for($i = 0; $i <= 3; $i++ ): ?>
+             
+            
+                <div class="col-lg-3 col-md-3  col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                       <img title="#empresa_title#" src="<?= INCLUDE_PATH; ?>/imagens/banner-publicidade.png" alt="#">
+                      
+                    </figure>                    
+                  
+                    </div>
+                  </div>
+            
+              <?php endfor; ?>
+                 
               </div>
             </div> 
             <!-- End our teacher content -->           

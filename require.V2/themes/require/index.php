@@ -124,24 +124,24 @@
     
     <!-- Testimonials -->
     <div class="section-title">
-      <h2>Saiba mais</h2>
+      <h2>Colaboradores</h2>
       <h4>O sucesso dos nossos clientes é o nosso bem-estar. Venha fazer parte da Require!  </h4>
     </div>
     <section class="row breath">
-      <div class="col-md-6">
-        <div class="testblock">Sou natural de Alagoas e formado em Análise e Desenvolvimento de Sistemas. Com muita disposição, pretendo levar até você o que há de melhor no cenário web. Respiro tecnologia e estou pronto para encarar novos desafios..</div>
-        <div class="clientblock"> <img src="<?= INCLUDE_PATH; ?>/images/victorcardoso.jpg" alt=".">
+      <div class="col-md-4">
+       <div class="clientblock"> <img src="<?= INCLUDE_PATH; ?>/images/victorcardoso.jpg" alt=".">
           <p><strong>Victor Cardoso</strong> <br>
             Criador e CEO da <a href="http://require.com.br/">Require</a></p>
         </div>
+        <div class="testblock"><ul>
+          <li><img src="<?= INCLUDE_PATH; ?>/images/victorcardoso.jpg" alt="."></li>
+          <li><img src="<?= INCLUDE_PATH; ?>/images/victorcardoso.jpg" alt="."></li>
+        </ul>
+        
+      
       </div>
       <div class="col-md-6">
-        <div class="testblock"><p><strong>Contato</strong> <br>
-            Cel e Whatsapp<a href="(82) 9 99605 - 9189">(82) 9 99605 - 9189</a></p>
-        </div>
-        <div class="testblock"><p><strong>Skype</strong> <br>
-            Skype <a href="victor.cardoso22"> victor.cardoso22</a></p>
-        </div>
+        
       </div>
     </section>
     <!-- // End Testimonials --> 

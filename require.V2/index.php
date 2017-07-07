@@ -8,7 +8,7 @@ $sessao = new Session;
     <head>
         <meta charset="UTF-8">
         <meta content="Require" name="author">
-        <meta content="#fca311" name="theme-color">
+        <meta content="#fdbd53" name="theme-color">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
        
     
@@ -63,8 +63,8 @@ $sessao = new Session;
         ?>
 
 
-        <script type="text/javascript" src="<?= INCLUDE_PATH; ?>/_cdn/jquery.js"></script> 
-       <script type="text/javascript" src="<?= INCLUDE_PATH; ?>/_cdn/bootstrap/bootstrap.min.js"></script> 
+       <script type="text/javascript" src="<?= INCLUDE_PATH; ?>/_cdn/jquery.js"></script> 
+       <!-- <script type="text/javascript" src="<?= INCLUDE_PATH; ?>/_cdn/bootstrap/bootstrap.min.js"></script>  -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
      <script src="<?= INCLUDE_PATH; ?>/_cdn/js/jquery.prettyPhoto.js"></script>
